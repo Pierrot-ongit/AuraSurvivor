@@ -1,5 +1,3 @@
-// Copyright Nono Studios
-
 #pragma once
 
 #include "CoreMinimal.h"
