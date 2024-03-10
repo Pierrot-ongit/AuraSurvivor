@@ -53,17 +53,6 @@ USkillMenuWidgetController* AAuraHUD::GetSkillMenuWidgetController(const FWidget
 	return SkillMenuWidgetController;
 }
 
-UBlessingMenuWidgetController* AAuraHUD::GetBlessingMenuWidgetController(const FWidgetControllerParams& WCParams)
-{
-	if (BlessingMenuWidgetController == nullptr)
-	{
-		BlessingMenuWidgetController = NewObject<UBlessingMenuWidgetController>(this, BlessingMenuWidgetControllerClass);
-		BlessingMenuWidgetController->SetWidgetControllerParams(WCParams);
-		BlessingMenuWidgetController->BindCallbacksToDependencies();
-	}
-	return BlessingMenuWidgetController;
-}
-
 void AAuraHUD::InitOverlay(APlayerController* PC, APlayerState* PS, UAbilitySystemComponent* ASC, UAttributeSet* AS)
 {  
 	checkf(OverlayWidgetClass, TEXT("Overlay Widget Class uninitialized, please fill out BP_AuraHUD"));

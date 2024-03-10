@@ -29,7 +29,6 @@ public:
 	UAttributeMenuWidgetController* GetAttributeMenuWidgetController(const FWidgetControllerParams& WCParams);
 	USpellMenuWidgetController* GetSpellMenuWidgetController(const FWidgetControllerParams& WCParams);
 	USkillMenuWidgetController* GetSkillMenuWidgetController(const FWidgetControllerParams& WCParams);
-	UBlessingMenuWidgetController* GetBlessingMenuWidgetController(const FWidgetControllerParams& WCParams);
 
 	void InitOverlay(APlayerController* PC, APlayerState* PS, UAbilitySystemComponent* ASC, UAttributeSet* AS);
 
@@ -66,10 +65,4 @@ private:
 	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<USkillMenuWidgetController> SkillMenuWidgetControllerClass;
-
-	UPROPERTY()
-	TObjectPtr<UBlessingMenuWidgetController> BlessingMenuWidgetController;
-	
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<UBlessingMenuWidgetController> BlessingMenuWidgetControllerClass;
 };
