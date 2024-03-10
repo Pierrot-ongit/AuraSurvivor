@@ -6,7 +6,6 @@
 #include "AbilitySystemComponent.h"
 #include "AuraAbilitySystemComponent.generated.h"
 
-struct FBlessingInfo;
 struct FTalentData;
 struct FAuraAbilityInfo;
 
@@ -91,14 +90,6 @@ public:
 
 	UFUNCTION(Server, Reliable)
 	void ServerHandleTalent(const FGameplayTag& AbilityTag, const FGameplayTag& TalentTag, TSubclassOf<UGameplayEffect> TalentGameplayEffect, bool DeactivateTalent);
-
-	/////// Blessings ////////
-	UFUNCTION(BlueprintCallable)
-	void BlessingChoosed(const FBlessingInfo& BlessingInfo);
-	void MakeBlessingEffect(const FBlessingInfo& BlessingInfo);
-
-	//UFUNCTION(Server, Reliable)
-	//void ServerUpgradeBlessing(const FBlessingInfo& BlessingInfo);
 	
 protected:
 	virtual void OnRep_ActivateAbilities() override;

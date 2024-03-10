@@ -13,7 +13,6 @@ struct FWidgetControllerParams;
 class UAbilityInfo;
 class UAbilitySystemComponent;
 class UAttributeMenuWidgetController;
-class UBlessingMenuWidgetController;
 class USpellMenuWidgetController;
 class UOverlayWidgetController;
 class USkillMenuWidgetController;
@@ -47,9 +46,6 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="AuraAbilitySystemLibrary|WidgetController", meta=(DefaultToSelf = "WorldContextObject"))
 	static USkillMenuWidgetController* GetSkillMenuWidgetController(const UObject* WorldContextObject);
-
-	UFUNCTION(BlueprintPure, Category="AuraAbilitySystemLibrary|WidgetController", meta=(DefaultToSelf = "WorldContextObject"))
-	static UBlessingMenuWidgetController* GetBlessingMenuWidgetController(const UObject* WorldContextObject);
 
 	/*
 	 * Ability System Class Defaults

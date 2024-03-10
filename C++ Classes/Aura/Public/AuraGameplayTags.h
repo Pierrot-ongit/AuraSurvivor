@@ -135,16 +135,6 @@ public:
 	FGameplayTag Skills_Attributes_MaxProjectiles;
 	FGameplayTag Skills_Attributes_MaxNumTargets;
 
-	// Blessings
-	FGameplayTag Blessings_Display_AoE;
-	FGameplayTag Blessings_Display_Attack;
-	FGameplayTag Blessings_Display_Attribute;
-	FGameplayTag Blessings_Display_Autocast;
-	FGameplayTag Blessings_Display_Buff;
-	FGameplayTag Blessings_Display_Spell;
-	FGameplayTag Blessings_Display_Projectile;
-
-	TMap<FGameplayTag, FString> TagsToStrings;
 	
 protected:
 
